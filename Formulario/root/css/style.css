@@ -82,7 +82,11 @@ main {
     font-weight: 300;
     border: 1px solid red;
 }
-
+/*SECTION*/
+.contenedor {
+    display: flex;
+    border: 5px solid rgb(60, 255, 0);
+}
 .form-dos, name{
     border: 1px solid red;
     padding: 30px;
