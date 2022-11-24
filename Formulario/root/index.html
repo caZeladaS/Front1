@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Petshop</title>
+    <title>Formulario Super
+        Poderes</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
         <p>20% de descuento en todos los productos!</p>
         <section class="flex top">
             <img src="./img/Logo.png" alt="">
-            <div>Cz PetShop</div>
+            <div>Elije tu Super Poder!!!</div>
         </section>
         <nav>
             <ul class="lista flex">
@@ -39,23 +40,24 @@
                 <div class="form-dos">
                     <form action="registro" method="post">
                         <p>*Nombre</p>
+                        <input type="text" id="Nombre" name="NombreDeUsuario">
                         <label for="Nombre"></label>
-                        <input type="text" name="NombreDeUsuario" id="">
                         <p>Fecha</p>
-                        <input type="date" name="fecha">
+                        <input type="date" id="fecha" name="fecha">
+                        <label for="fecha"></label>
                         <p>Deje sus comentarios</p>
-                        <label for="comentario"></label>
                         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                        <label for="comentario"></label>
                     </form>
                 </div>
                 <div class="form-tres">
                     <form action="registro" method="post">
                         <p>*Especie</p>
-                        <label for="Nombre"></label>
-                        <input type="text" name="NombreDeUsuario" id="">
+                        <input type="text" id="Especie" name="Especie" >
+                        <label for="Especie"></label>
                         <p>Agregar Foto</p>
+                        <input type="file" id="foto" name="imagen" accept=".jpg">
                         <label for="Seleccionar archivo"></label>
-                        <input type="file" name="imagen" accept=".jpg">
                         <p>Poderes</p>
                         <section class="check-button">
                             <ul>
@@ -94,10 +96,10 @@
                     </form>
                 </div>
             </section>
-            <form action="" method=""></form>
-            <input type="button" id="Añadir" name="Añadir">
-            <label for="Añadir"></label>
-            <button type="submit">Añadir</button>
+            <form action="" method="">
+                <input type="submit" id="boton" name="Submit" value="Añadir">
+            </form>
+            
         </div>
     </main>
 
