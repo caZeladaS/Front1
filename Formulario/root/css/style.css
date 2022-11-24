@@ -50,7 +50,6 @@ header p {
 
 /*ESTILOS DEL MAIN*/
 main { 
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,19 +72,18 @@ main {
     font-size: 40px;
     font-weight: 700;
     padding: 10px;
-    border: 1px solid red;
+
 }
 .form h3 {
     color: #FBFFFD;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    border: 1px solid red;
+
 }
 /*SECTION*/
 .contenedor {
     display: flex;
-    border: 5px solid rgb(60, 255, 0);
 }
 .form-dos, name{
     border: 1px solid red;
@@ -97,7 +95,7 @@ main {
     text-align: left;
 }
 .form-tres, name{
-    border: 1px solid red;
+
     padding: 30px;
     width: 50%;
     height: 65%;
@@ -105,7 +103,10 @@ main {
 .form-tres, p {
     text-align: left;
 }
-
+/*ESTILO CHECKBOX&RADIOBUTTONS*/
+li {
+    list-style-type: none;
+}
 /*ESTILOS DE FOOTER*/
 .footer div {
     font-family: 'Roboto', sans-serif;

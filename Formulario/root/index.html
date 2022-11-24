@@ -15,11 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto:wght@100;300&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
-
 <body>
     <header>
         <p>20% de descuento en todos los productos!</p>
@@ -33,17 +30,12 @@
                 <li><a href="#">Registrarme </a></li>
                 <li><a href="#">Ingresar </a></li>
             </ul>
-
-        </nav>
-        <section>
-
-        </section>
     </header>
     <main>
         <div class="form">
             <h2>Añadé tu super!</h2>
             <h3>Agregá tu personaje favorito completando las opciones.</h3>
-                <section class="contenedor">
+            <section class="contenedor">
                 <div class="form-dos">
                     <form action="registro" method="post">
                         <p>*Nombre</p>
@@ -56,32 +48,62 @@
                         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
                     </form>
                 </div>
-    
                 <div class="form-tres">
                     <form action="registro" method="post">
-                        <p>*Nombre</p>
+                        <p>*Especie</p>
                         <label for="Nombre"></label>
                         <input type="text" name="NombreDeUsuario" id="">
-                        <p>Fecha</p>
-                        <input type="date" name="fecha">
-                        <p>Deje sus comentarios</p>
-                        <label for="comentario"></label>
-                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                        <p>Agregar Foto</p>
+                        <label for="Seleccionar archivo"></label>
+                        <input type="file" name="imagen" accept=".jpg">
+                        <p>Poderes</p>
+                        <section class="check-button">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="Poder1" name="Poder-1" value="Volar">
+                                    <label for="Poder1">Volar</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Poder2" name="Poder-2" value="Superinteliencia">
+                                    <label for="Poder2">Superinteliencia</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Poder3" name="Poder-3" value="Vista de rayo laser">
+                                    <label for="Poder3">Vista de rayo laser</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Poder4" name="Poder-4" value="Billetera Gorda">
+                                    <label for="Poder4">Billetera Gorda</label>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>Tipo de personaje</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="Heroe / Heroina" name="Heroe / Heroina"
+                                        value="Heroe / Heroina">
+                                    <label for="Heroe / Heroina">Heroe / Heroina</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Villano / Villana" name="Villano / Villana"
+                                        value="Villano / Villana">
+                                    <label for="Villano / Villana">Villano / Villana</label>
+                                </li>
+                            </ul>
+                        </section>
                     </form>
                 </div>
             </section>
+            <form action="" method=""></form>
+            <input type="button" id="Añadir" name="Añadir">
+            <label for="Añadir"></label>
+            <button type="submit">Añadir</button>
         </div>
     </main>
 
-
-
-
-
-
-
-        <footer class="footer">
-            <div>Todos los derechos reservados a FRONT END 1</div>
-        </footer>
+    <footer class="footer">
+        <div>Todos los derechos reservados a FRONT END 1</div>
+    </footer>
 </body>
 
 </html>
