@@ -1,26 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+/*ESTILOS GENERALES*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-
-.header {
-    display: flex;
-    background-color: ;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-}
-.header ul{
-    color: #242E52;
-    display: flex;
-    list-style: none;
-    width: 600px;
-    justify-content: space-around;
-}
-.header button{
+input#button {
     background-color: #8B48BF;
     border: none;
     border-radius: 50px;
@@ -31,6 +18,61 @@
     width: 140px;
     height: 44px;
 }
+/* ESTILO HEADER */
+.flex{
+    display: flex;
+}
+.header {
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.logo{
+    height: 20%;
+    margin-left: 5%;
+}
+.navbar{
+    width: 100%;
+}
+.lista{
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px 200px;
+}
+.lista li{
+    margin: 0px 15px;
+    white-space: nowrap;
+}
+.lista a{
+    color: #242E52;
+    font-size: 0.813rem;
+    text-decoration: none;
+}
+input#button{
+    margin-right: 5%;
+    /* visibility: hidden; */
+}
+.fa-burger{
+    visibility: hidden;
+}
+/* RESPONSIVE | MEDIA QUERIES */
+/* min-width y max-width */
+@media screen and  (max-width: 700px)
+{
+    .navbar{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .section{
     display: flex;
     margin: 15px;
@@ -58,7 +100,7 @@
     text-align: right;
     padding: 0% 10% 0% 10%;
 }
-.section button{
+.input#button-dos{
     background-color: #8B48BF;
     border: none;
     border-radius: 50px;
@@ -70,4 +112,5 @@
     height: 44px;
     margin-left: 73%;
     margin-top: 15px;
+    /* visibility: hidden; */
 }
