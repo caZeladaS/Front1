@@ -7,37 +7,32 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-input#button {
-    background-color: #8B48BF;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0em 0.1em 0.4em 0.1em #888888;
-    color: white;
-    font-weight: 600;
-    font-size: 13.18px;
-    width: 140px;
-    height: 44px;
-}
+
 /* ESTILO HEADER */
-.flex{
-    display: flex;
-}
+
 .header {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 1440px;
     height: 200px;
 }
 .logo{
     height: 20%;
-    margin-left: 5%;
+
 }
 .navbar{
-    width: 100%;
+    display: flex;
+
+    width: 600px;
+
 }
 .lista{
+    display: flex;
     justify-content: space-around;
     list-style-type: none;
-    margin: 0px 200px;
+    width: 10px;
+    
 }
 .lista li{
     margin: 0px 15px;
@@ -48,59 +43,10 @@ input#button {
     font-size: 0.813rem;
     text-decoration: none;
 }
-input#button{
-    margin-right: 5%;
-    /* visibility: hidden; */
-}
 .fa-burger{
     visibility: hidden;
 }
-/* RESPONSIVE | MEDIA QUERIES */
-/* min-width y max-width */
-@media screen and  (max-width: 700px)
-{
-    .navbar{
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-.section{
-    display: flex;
-    margin: 15px;
-    
-}
-.section div img{
-
-}
-.section div h2{
-    color: #232C50;
-    font-style: bold;
-    font-size: 50px;
-    line-height: 57px;
-    line-height: 115%;
-    text-align: right;
-    padding: 10%;
-
-}
-.section div h3{
-    color: #000000;
-    font-style: bold;
-    font-size: 16.56px;
-    line-height: 57px;
-    line-height: 115%;
-    text-align: right;
-    padding: 0% 10% 0% 10%;
-}
-.input#button-dos{
+.btn  {
     background-color: #8B48BF;
     border: none;
     border-radius: 50px;
@@ -110,7 +56,85 @@ input#button{
     font-size: 13.18px;
     width: 140px;
     height: 44px;
-    margin-left: 73%;
-    margin-top: 15px;
-    /* visibility: hidden; */
+}
+
+/* ESTILOS SECTION HEADER */
+
+.section-header{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    width: 1440px;
+    
+}
+.section-header div img{
+    width: 540px;
+    height: 462px;
+
+
+}
+.header-tittle{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 462px;
+    margin-right: 100px;
+}
+.section-header h1{
+    color: #232C50;
+    font-style: bold;
+    font-size: 50px;
+    line-height: 57px;
+    margin-top: 40px;
+    width: 450px;
+    height: 228px;
+
+}
+.section-header h3{
+    color: #000000;
+    font-weight: 500;
+    font-size: 16.56px;
+    line-height: 26px;
+    text-align: right;
+    margin-top: 30px;
+    width: 450px;
+    height: 256;
+}
+
+.header-tittle button  {
+    margin-top: 40px;
+}
+
+
+
+/* RESPONSIVE | MEDIA QUERIES */
+
+/* min-width y max-width */
+@media screen and  (max-width: 480px)
+{
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar{
+        display: none;
+        
+    }
+    .fa-burger{
+        visibility: visible;
+    }
+
+
+header button{
+    display: none;
+}
+
+.section-header {
+    flex-direction: column;
+    align-items: center;
+}
+.header-tittle{
+    margin: 0;
+    margin-left: 100px;
+}
 }
